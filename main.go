@@ -1,9 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"regexp"
+)
 
 //henter ekstern modul rsc.io/quote
 import "rsc.io/quote"
+
+import "testing"
 
 func  GetHello()string {
 	return quote.Hello()
