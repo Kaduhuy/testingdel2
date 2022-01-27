@@ -2,33 +2,15 @@ package main
 
 import (
 	"fmt"
-	"regexp"
+	"github.com/Kaduhuy/testingdel2/myquote"
+
 )
 
-//henter ekstern modul rsc.io/quote
-import "rsc.io/quote"
 
-import "testing"
-
-func  GetHello()string {
-	return quote.Hello()
-
-}
-func  GetGlass()string {
-	return quote.Glass()
-
-}
-func GetGo()string {
-	return quote.Go()
-
-}
-func  GetOpt()string {
-	return quote.Opt()
-
-}
 func main(){
-	fmt.Println(GetHello())
-	fmt.Println(GetGlass())
-	fmt.Println(GetGo())
-	fmt.Println(GetOpt())
+	fmt.Println(myquote.GetHello())
+	fmt.Println(myquote.GetGlass())
+	fmt.Println(myquote.GetGo())
+	fmt.Println(myquote.GetOpt())
 }
+
